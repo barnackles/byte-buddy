@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+	implementation 'net.bytebuddy:byte-buddy:1.10.17'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
