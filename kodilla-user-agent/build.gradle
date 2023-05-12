@@ -18,7 +18,7 @@ dependencies {
             configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
         }
         manifest {
-            attributes "Premain-Class": 'com.kodilla.agent.Agent',
+            attributes "Premain-Class": 'com.kodilla.useragent.Agent',
                     "Can-Redefine-Classes" : "true",
                     "Can-Retransform-Classes" : "true"
 

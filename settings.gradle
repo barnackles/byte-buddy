@@ -1,3 +1,4 @@
 rootProject.name = 'kodilla-byte-buddy'
 include 'kodilla-agent'
+include 'kodilla-user-agent'
 

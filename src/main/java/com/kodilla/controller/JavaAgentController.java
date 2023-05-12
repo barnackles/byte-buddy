@@ -5,11 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController {
+public class JavaAgentController {
 
     @GetMapping("/create")
     public String createUser() {
         User user = new User();
+        user.doSomething();
         return user.getName();
     }
 }
