@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.kodilla'
-version = '0.0.1-SNAPSHOT'
+version = '1.0-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
@@ -13,10 +13,12 @@ repositories {
 }
 
 dependencies {
-	implementation 'net.bytebuddy:byte-buddy:1.10.17'
+	implementation 'net.bytebuddy:byte-buddy:1.12.23'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 	jar {
+		duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 		from {
 			configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
 		}

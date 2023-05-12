@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'net.bytebuddy:byte-buddy:1.10.13'
+    implementation 'net.bytebuddy:byte-buddy:1.12.23'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
     jar {

@@ -17,11 +17,10 @@ public class Agent {
 
         AgentBuilder agentBuilder = new Default()
                 .type(ElementMatchers.nameStartsWith("com.kodilla"))
-                .transform(((builder, typeDescription, classLoader, module) -> {
+                .transform(((builder, typeDescription, classLoader, module, protectionDomain) -> {
                     System.out.println("Class " + typeDescription);
                     return builder.visit(Advice.to(MyMethodMonitor.class).on(ElementMatchers.any()));
                 }));
-
         agentBuilder.installOn(instrumentation);
     }
 
