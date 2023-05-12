@@ -1,12 +1,15 @@
 package com.kodilla.controller;
 
-import org.springframework.stereotype.Controller;
+import com.kodilla.bytebuddy.User;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class UserController {
 
-    @
-    public creatUser() {
-
+    @GetMapping("/create")
+    public String createUser() {
+        User user = new User();
+        return user.getName();
     }
 }
