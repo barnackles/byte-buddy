@@ -2,7 +2,7 @@ package com.kodilla.bytebuddy;
 
 import java.util.List;
 
-public class BudyApp {
+public class BuddyApp {
 
     public static void main(String[] args) {
 
